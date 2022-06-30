@@ -1,2 +1,2 @@
 # Skillz
-Landing page for the online courses 
+Landing page for the online courses
