@@ -4,6 +4,7 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     font-family: 'Source Sans Pro', sans-serif;
+    scroll-behavior: smooth;
 }
 #discount{
     z-index: 5;
@@ -122,7 +123,7 @@
     color: #B2B2BF;
     margin-bottom: 48px;
 }
-.txt_column button{
+.dark_bacground{
     cursor: pointer;
     transition: .3s;
     font-weight: 400;
@@ -137,9 +138,8 @@
     padding: 16px 24px;
     border: none;
 }
-.txt_column button:hover{
-    box-shadow: #fff -5px 5px 20px;
-    transform: scale(1.1);
+.dark_bacground:hover{
+    box-shadow: #fff 0 5px 30px;
 }
 #first{
     position: absolute;
@@ -170,8 +170,6 @@
     left: 53%;
     top: -380px;
 }
-/* Need to make some hover FX for the images above */
-
 .second_row {
     display: flex;
     align-items: center;
@@ -197,25 +195,6 @@
     text-align: center;
     color: #F6F6F8;
     margin-bottom: 46px;
-}
-.second_row button{
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #1C1C33;
-    background: #57D9A6;
-    border-radius: 4px;
-    padding: 16px 24px;
-    border: none;
-    transition: .3s;
-    cursor: pointer;
-}
-.second_row button:hover{
-    box-shadow: #ffffff 0 3px 25px;
-    transform: scale(1.1);
 }
 .third_row{
     display: flex;
@@ -254,8 +233,11 @@
     margin-left: 45px;
     margin-right: 45px;
 }
-.courses_square p,a{
+.courses_square p {
     margin-left: 24px;  
+}
+.courses_square a{
+    margin-left: 24px;
 }
 .courses_square p:nth-child(2){
     font-weight: 400;
@@ -324,7 +306,45 @@
     color: #F6F6F8;
     margin-bottom: 46px;
 }
-.txt_side button{
+
+#free-workshop{
+    height: 250vh;
+    width: 100%;
+    background: #F5F5F5;
+    padding-top: 142px;
+}
+.free-workshop_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upcoming-workshop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 98px;
+}
+.upcoming-workshop h1{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 53px;
+    text-align: center;
+    color: #1C1C33;
+    margin-bottom: 69px;
+}
+.upcoming-workshop p{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    width: 644px;
+    color: #4E4E65;
+    margin-bottom: 46px;
+}
+.light_bacground{
+    background: #57D9A6;
+    border-radius: 4px;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
@@ -332,15 +352,114 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #1C1C33;
-    background: #57D9A6;
-    border-radius: 4px;
+    transition: .4s;
     padding: 16px 24px;
     border: none;
-    outline: none;
     cursor: pointer;
-    transition: .4s;
 }
-.txt_side button:hover{
-    box-shadow: #ffffff 0 3px 25px;
+.light_bacground:hover{
+    box-shadow: #57D9A6 0 5px 30px;
+}
+.workshop_squares__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 83px;
+    padding-right: 83px;
+}
+.workshop_squares:nth-child(2){
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.workshop_squares{
+    background: #FFFFFF;
+    height: 310px;
+    padding-left: 24px;
+    padding-right: 35px;
+    padding-top: 22px;
+    padding-bottom: 24px;
+    transition: .4s;
+    cursor: pointer;
+    margin-bottom: 145px;
+}
+.workshop_squares h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1C1C33;
+    margin-bottom: 11px;
+}
+.workshop_squares p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4E4E65;
+    margin-bottom: 28px;
+}
+.workshop_squares a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #57D9A6;
+    text-decoration: none;
+}
+.workshop_squares:hover{
     transform: scale(1.1);
+    transition: .2s;
+    box-shadow: #57D9A6 0 5px 30px;
+    border-radius: 10px;
+}
+.workshop_squares:hover a{
+    text-decoration: underline;
+    color: #222;
+}
+.feedback_container{
+    padding-top: 82px;
+    padding-left: 117px;
+    padding-right: 117px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #57D9A6;
+}
+.feeback_txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.feedback_txt p:nth-child(1){
+    margin-top: 45px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #1C1C33;
+    width: 1050px;
+    margin-bottom: 35px;
+}
+.feedback_txt p:nth-child(2){
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #4E4E65;
+    margin-bottom: 35px;
+}
+.circles_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.circle{
+    background: #222222;
+    border-radius: 9px;
+    height: 18px;
+    width: 18px;
+}
+.circle:last-child{
+    background: rgba(34, 34, 34, 0.4);
+    margin-left: 8px;
 }
