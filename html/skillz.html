@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">   
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Skillz</title>
 </head>
 <body>
@@ -18,21 +19,21 @@
    
             
             <div class="nav_bar__logo">
-                <img src="../img/IMAGE3.png" alt="">
+                <img src="../img/IMAGE3.png" alt="" data-aos="fade-right" data-aos-duration="1200">
             </div>
 
             <div class="nav_bar__links">
                 <ul>
-                    <li><a href="#courses">Courses</a></li>
-                    <li><a href="#free-workshop">Free Workshops</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li data-aos="fade-down"  data-aos-duration="300"><a href="#courses">Courses</a></li>
+                    <li data-aos="fade-down"  data-aos-duration="400"><a href="#free-workshop">Free Workshops</a></li>
+                    <li data-aos="fade-down"  data-aos-duration="600"><a href="#about">About</a></li>
+                    <li data-aos="fade-down"  data-aos-duration="800"><a href="#blog">Blog</a></li>
+                    <li data-aos="fade-down"  data-aos-duration="1000"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="nav_bar__cart">
-                <img src="../img/Frame.png" alt="">
+                <img src="../img/Frame.png" alt="" data-aos="fade-left" data-aos-duration="1200">
             </div>
 
     </nav>
@@ -206,5 +207,152 @@
         </div>
     </section>
 
+    <section id="blog">
+        <div class="blog_container">
+            <div class="blog_txt">
+                <h1>Rec<span style="border-bottom: 2px solid #57D9A6; padding-bottom:17px;">ent Arti</span>cles</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                   Suspendisse varius enim in eros elementum tristique. 
+                   Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
+                </p>
+                <button class="light_bacground">View all articles</button>
+            </div>
+
+            <div class="blog_squares">
+
+                <div class="courses_square">
+                    <img src="../img/IMAGE9.png" alt="">
+                    <p class="date">February 8, 2021</p>
+                    <p class="descriptoin">The TikTok Algorithm: How to <br> Get the Best Engagement</p>
+                    <p class="name">Dianne Russell</p>
+                </div>
+
+                <div class="courses_square">
+                    <img src="../img/IMAGE9.png" alt="">
+                    <p class="date">February 8, 2021</p>
+                    <p class="descriptoin">How to Win Friends and <br> Influence People</p>
+                    <p class="name">Marvin McKinney</p>
+                </div>
+
+                <div class="courses_square">
+                    <img src="../img/IMAGE6.png" alt="">
+                    <p class="date">January 31, 2021</p>
+                    <p class="descriptoin">iPhone Photography: Tips,<br> Tricks, and Best Practices</p>
+                    <p class="name">Katie Murphy</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="FAQ">
+        <div class="FAQ-container">
+            <h1 class="faq_header">Frequently asked Questions</h1>
+            <div class="faq-row" id="faq-row1">
+                <p>I have never done animation. Will I succeed?</p>
+                <p id="secondFaqP1">Of course! This course is designed for beginners
+                    who still doesn't know anything. The course is intensive but
+                    it's worth it. Most importantly, do your homework on time.
+                    Coaches and curators will always help you. Everything will work out!
+                </p>
+                <div class="detBtn" id="detBtn1" onclick="Click1()"><ion-icon name="close-outline"></ion-icon></div>
+            </div>
+            <div class="faq-row" id="faq-row2">
+                <p>
+                    How intensive is the course?</p>
+                <p id="secondFaqP2">The course is quite intensive, but, with a strong desire, you will be able to do everything.
+                    You will need 2-3 free hours a day to study the material and do your homework.
+                </p>
+                <div class="detBtn" id="detBtn2" onclick="Click2()"><ion-icon name="close-outline"></ion-icon></div>
+            </div>
+            <div class="faq-row" id="faq-row3">
+                <p>What programs do I need to study?</p>
+                <p id="secondFaqP3">Of course! This course is designed for beginners
+                    who still doesn't know anything. The course is intensive but
+                    it's worth it. Most importantly, do your homework on time.
+                    Coaches and curators will always help you. Everything will work out!
+                </p>
+                <div class="detBtn" id="detBtn3" onclick="Click3()"><ion-icon name="close-outline"></ion-icon></div>
+            </div>
+            <div class="faq-row" id="faq-row4">
+                <p>Are there installments or additional discounts?</p>
+                <p id="secondFaqP4">
+                    The course is quite intensive, but, with a strong desire, you will be able to do everything.
+                    You will need 2-3 free hours a day to study the material and do your homework.
+                </p>
+                <div class="detBtn" id="detBtn4" onclick="Click4()"><ion-icon name="close-outline"></ion-icon></div>
+            </div>
+            <div class="faq-row" id="faq-row5">
+                <p>Do you help with employment?</p>
+                <p id="secondFaqP5">Of course! This course is designed for beginners
+                    who still doesn't know anything. The course is intensive but
+                    it's worth it. Most importantly, do your homework on time.
+                    Coaches and curators will always help you. Everything will work out!
+                </p>
+                <div class="detBtn" id="detBtn5" onclick="Click5()"><ion-icon name="close-outline"></ion-icon></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact_container">
+
+            <div class="email_rectangle">
+                <h1>You have the power to define your future.</h1>
+                <form action="subscribe">
+                    <input type="email" name="" id="email" placeholder="EMAIL ADDRESS">
+                    <input type="button" value="Submit" id="inputBtn">
+                </form>
+            </div>
+
+            <img src="../img/IMAGE3.png" alt="" class="logo">
+
+            <div class="link_columns">
+                <div class="navigation_column">
+                    <ul>
+                        <li><a href="#courses">learning Platform</a></li>
+                        <li><a href="#courses">Home</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#free-workshop">Free Workshops</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="other-links_column">
+                    <ul>
+                        <li><a href="#">Template</a></li>
+                        <li><a href="#">Instructions</a></li>
+                        <li><a href="#">Style Guide</a></li>
+                        <li><a href="#">Licenses</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+
+                <div class="social-media_column">
+                    <p>Follow skillz</p>
+                    <div class="icon_container">
+                        <div class="icon_circles"><ion-icon name="logo-tiktok"></ion-icon></div>
+                        <div class="icon_circles"><ion-icon name="logo-instagram"></ion-icon></div>
+                        <div class="icon_circles"><ion-icon name="logo-youtube"></ion-icon></div>
+                        <div class="icon_circles"><ion-icon name="logo-facebook"></ion-icon></div>
+                        <div class="icon_circles"><ion-icon name="logo-youtube"></ion-icon></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>&copy;Skillz Template</p>
+        <p>Powered by Webflow</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 </html>
